@@ -1,13 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCHmiTfYwJRzInIFu9_CrbymmZWyGQUnms",
-    authDomain: "test-form-74606.firebaseapp.com",
-    databaseURL: "https://test-form-74606.firebaseio.com",
-    projectId: "test-form-74606",
-    storageBucket: "test-form-74606.appspot.com",
-    messagingSenderId: "963292298293",
-    appId: "1:963292298293:web:e5ea12f12f61e2d27b857c"
+    apiKey: "***********your api key*********",
+    authDomain: "**** your auth domain******",
+    databaseURL: "******",
+    projectId: "******",
+    storageBucket: "********",
+    messagingSenderId: "******",
+    appId: "*******"
   };
-
   // Initialize Firebase
 //   const app = initializeApp(firebaseConfig);
   firebase.initializeApp(firebaseConfig);
