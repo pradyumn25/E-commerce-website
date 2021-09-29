@@ -34,7 +34,7 @@
         </div>
         <div class="final" style="display: flex; align-items: center;">
             <div class="final-but"><button id="rzp-button1" style="margin-right: 10px;">PURCHASE</button></div>
-            <div class="total">No Item Added</div>
+            <div class="total" id="purchase-price">No Item Added</div>
         </div>
         
         <div class="cat" id="cat-box">
@@ -127,14 +127,16 @@
 
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
+        var amount_string = document.getElementById("purchase-price");
+        var amount = parseInt(amount_string);
         var options = {
-            "key": "rzp_test_72skfXPYQH5aMX", // Enter the Key ID generated from the Dashboard
-            "amount": "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+            "key": "******", // Enter the Key ID generated from the Dashboard
+            "amount": amount, // Amount is in currency subunits. Default currency is INR. Hence, for example: 50000 refers to 50000 paise
             "currency": "INR",
             "name": "Demo-checkout",
             "description": "Test Transaction",
             "image": "https://example.com/your_logo",
-            "order_id": "order_I39hJOcZ5ZI7Qh", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+            "order_id": "**********", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
             "handler": function (response){
                 alert(response.razorpay_payment_id);
                 alert(response.razorpay_order_id);
