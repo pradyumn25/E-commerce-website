@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navi-bar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navi-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.navi-bar ul:last-child{
+    margin-right: 15px;
+}
+
+.navi-bar{
+    position: absolute;
+    position: fixed;
+    margin-top: 0px;
+    width: 100%;
+    height: 10vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0066ff;
+    z-index: 1;
+}
+
+.filter-box{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    position: fixed;
+    color: white;
+    top: 10vh;
+    background-color: #002233;
+    width: 35vh;
+    transition: 0.5s;
+    height: 90vh;
+}
+
+.filter-box.active{
+    height: 10vh;
+    overflow: hidden;
+    position: fixed;
+}
+
+.filter-box-content{
+    margin: 15px;
+}
+
+.range span{
+    margin-left: 20px;
+}
+
+.options{
+    cursor: pointer;
+}
+
+.checkbox{
+    margin-top: 35px;
+}
+
+.checkbox span input{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.main{
+    display: flex;
+}
+
+.products{
+    position: absolute;
+    left: 40vh;
+    top: 20vh;
+    padding: 5px;
+    width: auto;
+}
+
+.card{
+    margin: 5px;
+}
+
+.main-cart{
+    display: none;
+    transition: 0.5s;
+}
+
+.main-cart.active {
+    
+    background-color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    z-index: 99;
+    flex-direction: column;
+}
+
+
+.cat{
+    top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qty input{
+    width: 25%;
+}
+
+
+button{
+    background-color: #0066ff;
+    color: #002233;
+    border: none;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+button:hover{
+    color: #0066ff;
+    background-color: #002233;
+}
+
+
+
+.main-cart .cat table tr th
+{
+    padding: 15px;
+    padding-top: 40px;
+}
+
+.main-cart .cat table tr td{
+    padding: 15px;
+}
+
+/* .final:first-child{
+    margin-right: 100px;
+} */
+
+
+
+

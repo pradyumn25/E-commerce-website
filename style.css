@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("images/back.svg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.about-us{
+    top: 0px;
+    
+}
+
+.nav-bar{
+    width: 100%;
+}
+
+.nav-bar ul{
+    background-color: #0066ff;
+    height: 10vh;
+    width: fit-content;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 50% 50%;
+    height: 10vh;
+}
+
+.nav-bar ul li{
+    margin-left: 40px;
+    margin-right: 40px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.about-us{
+    animation: animate__fadeInDown;
+    animation-duration: 2s;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-image img{
+    margin-left: 20px;
+    height: 650px;
+    width: 750px;
+    animation: MoveUpDown 1s linear infinite;
+}
+
+.about-us-content{
+    width: 35%;
+}
+
+.about-us-content h1{
+    font-size: 50px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about-us-content button{
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+    font-size: 15px;
+    padding: 15px;
+    border: 2px solid #002233;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.about-us-content button:hover{
+    background-color: #002233;
+    color: white;
+}
+
+.nav-bar ul li a{
+    padding: 15px;
+}
+
+
+.nav-bar ul li a:hover{
+    background-color: #002233;
+}
+
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

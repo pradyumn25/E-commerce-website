@@ -1,0 +1,48 @@
+.main-all{
+    height: 75vh;
+    width: 50vh;
+}
+
+.main-div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navi-bar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navi-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.navi-bar ul:last-child{
+    margin-right: 15px;
+}
+
+.navi-bar{
+    position: absolute;
+    position: fixed;
+    margin-top: 0px;
+    width: 100%;
+    height: 10vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0066ff;
+    z-index: 1;
+}

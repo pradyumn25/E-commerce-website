@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</head>
+<body class="text-center">
+
+    <div class="navi-bar">
+        <ul>
+            <li><a href="index.html"><ion-icon name="home"></ion-icon></a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+
+<div class="main-div">
+    <div class="main-all">
+        <main class="form-signin">
+        <form wtx-context="3C844396-9DE7-4D43-8F9A-C52FFA45C34E">
+          <h1 class="h3 mb-3 fw-normal">Sign Up</h1>
+      
+          <div class="form-floating">
+            <input type="text" class="form-control" id="name" placeholder="your name" wtx-context="60A4A9F0-3FC7-4F0A-8D69-075060A31279" required>
+            <label for="floatingInput">Name</label>
+          </div>
+          <div class="form-floating">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" wtx-context="60A4A9F0-3FC7-4F0A-8D69-075060A31279" required>
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="pass" placeholder="Password" wtx-context="30D7071B-B778-4FD2-8C92-C46F767D4A7E" required>
+            <label for="floatingPassword">Password</label>
+          </div>
+      
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me" wtx-context="184CA693-9F56-47EE-8AAD-9B8C8AC46AA9"> Remember me
+            </label>
+          </div>
+        </form>
+        <button class="w-100 btn btn-lg btn-primary" onclick="register()">Register</button>
+      </main>
+    </div>
+</div> 
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase.js"></script>
+    <script src="signup.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
